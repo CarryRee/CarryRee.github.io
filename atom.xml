@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Welcome]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-03T02:59:37.000Z</updated>
+  <updated>2017-07-21T09:19:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,14 +15,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[CarryRee's blog]]></title>
+    <title><![CDATA[CABasicAnimation 内存不释放问题]]></title>
+    <link href="http://yoursite.com/2017/07/21/animation/"/>
+    <id>http://yoursite.com/2017/07/21/animation/</id>
+    <published>2017-07-21T09:01:53.000Z</published>
+    <updated>2017-07-21T09:19:03.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="CABasicAnimation-removedOnCompletion-内存不释放问题"><a href="#CABasicAnimation-removedOnCompletion-内存不释放问题" class="headerlink" title="CABasicAnimation removedOnCompletion 内存不释放问题"></a>CABasicAnimation removedOnCompletion 内存不释放问题</h2><p>最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey</p>
+<hr>
+<p><strong>原因</strong>：<br>removedOnCompletion 默认为YES，代表动画执行完毕后就从图层上移除，图形会恢复到动画执行前的状态。如果想让图层保持显示动画执行后的状态,那就设置为NO，也就是说图层一直在从而导致图层未释放。</p>
+<p><strong>解决</strong>：<br>在界面结束之前先手动调用removeAnimationForKey</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="CABasicAnimation-removedOnCompletion-内存不释放问题"><a href="#CABasicAnimation-removedOnCompletion-内存不释放问题" class="headerlink" title="CABa]]>
+    </summary>
+    
+      <category term="动画 内存管理" scheme="http://yoursite.com/tags/%E5%8A%A8%E7%94%BB-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[CarryRee-s-blog]]></title>
     <link href="http://yoursite.com/2017/07/03/CarryRee-s-blog/"/>
     <id>http://yoursite.com/2017/07/03/CarryRee-s-blog/</id>
     <published>2017-07-03T02:59:37.000Z</published>
-    <updated>2017-07-03T02:59:37.000Z</updated>
-    <content type="html"></content>
+    <updated>2017-07-21T09:19:45.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="博客成功搭建纪念一下"><a href="#博客成功搭建纪念一下" class="headerlink" title="博客成功搭建纪念一下"></a>博客成功搭建纪念一下</h2>]]></content>
     <summary type="html">
-    
+    <![CDATA[<h2 id="博客成功搭建纪念一下"><a href="#博客成功搭建纪念一下" class="headerlink" title="博客成功搭建纪念一下"></a>博客成功搭建纪念一下</h2>]]>
     </summary>
     
   </entry>
