@@ -326,12 +326,15 @@
       
         
           
-            <h2 id="CABasicAnimation-removedOnCompletion-内存不释放问题"><a href="#CABasicAnimation-removedOnCompletion-内存不释放问题" class="headerlink" title="CABasicAnimation removedOnCompletion 内存不释放问题"></a>CABasicAnimation removedOnCompletion 内存不释放问题</h2><p>最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey</p>
-<hr>
-<p><strong>原因</strong>：<br>removedOnCompletion 默认为YES，代表动画执行完毕后就从图层上移除，图形会恢复到动画执行前的状态。如果想让图层保持显示动画执行后的状态,那就设置为NO，也就是说图层一直在从而导致图层未释放。</p>
-<p><strong>解决</strong>：<br>在界面结束之前先手动调用removeAnimationForKey</p>
-
-          
+          CABasicAnimation removedOnCompletion 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/21/animation/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -441,8 +444,15 @@
       
         
           
-            <h2 id="博客成功搭建纪念一下"><a href="#博客成功搭建纪念一下" class="headerlink" title="博客成功搭建纪念一下"></a>博客成功搭建纪念一下</h2>
+          博客成功搭建纪念一下
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/03/CarryRee-s-blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
