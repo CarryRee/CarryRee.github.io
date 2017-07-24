@@ -82,8 +82,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="CarryRee's blog" type="application/atom+xml" />
 
@@ -97,17 +95,17 @@
 
 
 
-<meta name="description" content="CABasicAnimation removedOnCompletion 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationFo">
+<meta name="description" content="CABasicAnimation 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey  原因：removedOnCo">
 <meta name="keywords" content="动画 内存管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CABasicAnimation 内存不释放问题">
 <meta property="og:url" content="http://yoursite.com/2017/07/21/animation/index.html">
 <meta property="og:site_name" content="CarryRee&#39;s blog">
-<meta property="og:description" content="CABasicAnimation removedOnCompletion 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationFo">
-<meta property="og:updated_time" content="2017-07-21T09:39:14.000Z">
+<meta property="og:description" content="CABasicAnimation 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey  原因：removedOnCo">
+<meta property="og:updated_time" content="2017-07-24T01:59:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CABasicAnimation 内存不释放问题">
-<meta name="twitter:description" content="CABasicAnimation removedOnCompletion 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationFo">
+<meta name="twitter:description" content="CABasicAnimation 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey  原因：removedOnCo">
 
 
 
@@ -324,7 +322,7 @@
       
 
       
-        <h2 id="CABasicAnimation-removedOnCompletion-内存不释放问题"><a href="#CABasicAnimation-removedOnCompletion-内存不释放问题" class="headerlink" title="CABasicAnimation removedOnCompletion 内存不释放问题"></a>CABasicAnimation removedOnCompletion 内存不释放问题</h2><p>最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey</p>
+        <h2 id="CABasicAnimation-内存不释放问题"><a href="#CABasicAnimation-内存不释放问题" class="headerlink" title="CABasicAnimation 内存不释放问题"></a>CABasicAnimation 内存不释放问题</h2><p>最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewController之前调用removeAnimationForKey</p>
 <hr>
 <p><strong>原因</strong>：<br>removedOnCompletion 默认为YES，代表动画执行完毕后就从图层上移除，图形会恢复到动画执行前的状态。如果想让图层保持显示动画执行后的状态,那就设置为NO，也就是说图层一直在从而导致图层未释放。</p>
 <p><strong>解决</strong>：<br>在界面结束之前先手动调用removeAnimationForKey</p>
@@ -505,7 +503,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CABasicAnimation-removedOnCompletion-内存不释放问题"><span class="nav-number">1.</span> <span class="nav-text">CABasicAnimation removedOnCompletion 内存不释放问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CABasicAnimation-内存不释放问题"><span class="nav-number">1.</span> <span class="nav-text">CABasicAnimation 内存不释放问题</span></a></li></ol></div>
             
 
           </div>

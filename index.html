@@ -326,7 +326,7 @@
       
         
           
-          CABasicAnimation removedOnCompletion 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致
+          CABasicAnimation 内存不释放问题最近在项目遇到一个问题就是，在页面dismissViewController后发现该页面没有被释放，仔细查阅后，发现页面用了CABasicAnimation的removedOnCompletion = NO会导致不被释放，应该在dismissViewC
           ...
           <!--noindex-->
           <div class="post-button text-center">
