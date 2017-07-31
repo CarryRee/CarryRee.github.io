@@ -326,8 +326,7 @@
       
         
           
-          浅谈block的循环引用#####1.前言：最近在项目上经常遇到控制器pop出来却不执行dealloc的，很多时候都是block循环引用导致，所以特意对block进行一番研究，以防自己犯引用错误；
-#####2.在ARC环境下，比较常见的发生循环引用就是self -&gt; block -&gt; 
+          浅谈block的循环引用1.前言：最近在项目上经常遇到控制器pop出来却不执行dealloc的，很多时候都是block循环引用导致，所以特意对block进行一番研究，以防自己犯引用错误；2.在ARC环境下，比较常见的发生循环引用就是self -&gt; block -&gt; self 从而形成环，
           ...
           <!--noindex-->
           <div class="post-button text-center">
