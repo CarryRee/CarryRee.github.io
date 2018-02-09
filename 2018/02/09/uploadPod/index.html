@@ -93,21 +93,21 @@
 
 
 
-<meta name="description" content="1.上传framework到Github参考打包framework上传到github 2.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
+<meta name="description" content="一.上传framework到Github参考打包framework上传到github 二.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将Framework提交Cocoapods">
 <meta property="og:url" content="http://yoursite.com/2018/02/09/uploadPod/index.html">
 <meta property="og:site_name" content="CarryRee&#39;s blog">
-<meta property="og:description" content="1.上传framework到Github参考打包framework上传到github 2.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
+<meta property="og:description" content="一.上传framework到Github参考打包framework上传到github 二.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
 <meta property="og:image" content="http://yoursite.com/img/2018:02:09_110201.jpg">
 <meta property="og:image" content="http://yoursite.com/img/2018:02:09_110302.jpg">
 <meta property="og:image" content="http://yoursite.com/img/2018:02:09_112103.jpg">
 <meta property="og:image" content="http://yoursite.com/img/2018:02:09_113004.jpg">
 <meta property="og:image" content="http://yoursite.com/img/2018:02:09_141205.jpg">
-<meta property="og:updated_time" content="2018-02-09T06:16:19.637Z">
+<meta property="og:updated_time" content="2018-02-09T06:22:35.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将Framework提交Cocoapods">
-<meta name="twitter:description" content="1.上传framework到Github参考打包framework上传到github 2.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
+<meta name="twitter:description" content="一.上传framework到Github参考打包framework上传到github 二.安装cocoapods的打包插件1.安装 1sudo gem install cocoapods-packager 2.注册 1pod trunk register xxxx@xx.com xxxx --verbose xxxx@xx.com 为注册邮箱xxxx 为用户名 注册后收到一封邮件，复制邮件打开链接">
 <meta name="twitter:image" content="http://yoursite.com/img/2018:02:09_110201.jpg">
 
 
@@ -325,8 +325,8 @@
       
 
       
-        <h2 id="1-上传framework到Github"><a href="#1-上传framework到Github" class="headerlink" title="1.上传framework到Github"></a>1.上传framework到Github</h2><p>参考<a href="http://carryree.com/2018/02/08/uploadGithub/" target="_blank" rel="external">打包framework上传到github</a></p>
-<h2 id="2-安装cocoapods的打包插件"><a href="#2-安装cocoapods的打包插件" class="headerlink" title="2.安装cocoapods的打包插件"></a>2.安装cocoapods的打包插件</h2><p>1.安装</p>
+        <h2 id="一-上传framework到Github"><a href="#一-上传framework到Github" class="headerlink" title="一.上传framework到Github"></a>一.上传framework到Github</h2><p>参考<a href="http://carryree.com/2018/02/08/uploadGithub/" target="_blank" rel="external">打包framework上传到github</a></p>
+<h2 id="二-安装cocoapods的打包插件"><a href="#二-安装cocoapods的打包插件" class="headerlink" title="二.安装cocoapods的打包插件"></a>二.安装cocoapods的打包插件</h2><p>1.安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install cocoapods-packager</div></pre></td></tr></table></figure>
 <p>2.注册</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod trunk register xxxx@xx.com xxxx --verbose</div></pre></td></tr></table></figure>
@@ -334,7 +334,7 @@
 <p>注册后收到一封邮件，复制邮件打开链接完成注册<br><img src="/img/2018:02:09_110201.jpg" width="400"></p>
 <p>3.查看注册信息</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod trunk me</div></pre></td></tr></table></figure>
-<h2 id="上传cocoa-pods"><a href="#上传cocoa-pods" class="headerlink" title="上传cocoa pods"></a>上传cocoa pods</h2><p>1.cd 到你的git本地目录</p>
+<h2 id="三-上传cocoa-pods"><a href="#三-上传cocoa-pods" class="headerlink" title="三.上传cocoa pods"></a>三.上传cocoa pods</h2><p>1.cd 到你的git本地目录</p>
 <p>2.在工程根目录初始化一个Podspec文件 最好与你项目同名</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod spec create EMTest</div></pre></td></tr></table></figure>
 <p><img src="/img/2018:02:09_110302.jpg" width="500"></p>
@@ -552,7 +552,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-上传framework到Github"><span class="nav-number">1.</span> <span class="nav-text">1.上传framework到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装cocoapods的打包插件"><span class="nav-number">2.</span> <span class="nav-text">2.安装cocoapods的打包插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上传cocoa-pods"><span class="nav-number">3.</span> <span class="nav-text">上传cocoa pods</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-上传framework到Github"><span class="nav-number">1.</span> <span class="nav-text">一.上传framework到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-安装cocoapods的打包插件"><span class="nav-number">2.</span> <span class="nav-text">二.安装cocoapods的打包插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-上传cocoa-pods"><span class="nav-number">3.</span> <span class="nav-text">三.上传cocoa pods</span></a></li></ol></div>
             
 
           </div>

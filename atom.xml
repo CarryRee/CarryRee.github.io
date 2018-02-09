@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Welcome]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-09T06:16:19.637Z</updated>
+  <updated>2018-02-09T06:22:35.225Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://yoursite.com/2018/02/09/uploadPod/"/>
     <id>http://yoursite.com/2018/02/09/uploadPod/</id>
     <published>2018-02-09T06:13:43.000Z</published>
-    <updated>2018-02-09T06:16:19.637Z</updated>
-    <content type="html"><![CDATA[<h2 id="1-上传framework到Github"><a href="#1-上传framework到Github" class="headerlink" title="1.上传framework到Github"></a>1.上传framework到Github</h2><p>参考<a href="http://carryree.com/2018/02/08/uploadGithub/" target="_blank" rel="external">打包framework上传到github</a></p>
-<h2 id="2-安装cocoapods的打包插件"><a href="#2-安装cocoapods的打包插件" class="headerlink" title="2.安装cocoapods的打包插件"></a>2.安装cocoapods的打包插件</h2><p>1.安装</p>
+    <updated>2018-02-09T06:22:35.225Z</updated>
+    <content type="html"><![CDATA[<h2 id="一-上传framework到Github"><a href="#一-上传framework到Github" class="headerlink" title="一.上传framework到Github"></a>一.上传framework到Github</h2><p>参考<a href="http://carryree.com/2018/02/08/uploadGithub/" target="_blank" rel="external">打包framework上传到github</a></p>
+<h2 id="二-安装cocoapods的打包插件"><a href="#二-安装cocoapods的打包插件" class="headerlink" title="二.安装cocoapods的打包插件"></a>二.安装cocoapods的打包插件</h2><p>1.安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install cocoapods-packager</div></pre></td></tr></table></figure>
 <p>2.注册</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod trunk register xxxx@xx.com xxxx --verbose</div></pre></td></tr></table></figure>
@@ -29,7 +29,7 @@
 <p>注册后收到一封邮件，复制邮件打开链接完成注册<br><img src="/img/2018:02:09_110201.jpg" width="400"></p>
 <p>3.查看注册信息</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod trunk me</div></pre></td></tr></table></figure>
-<h2 id="上传cocoa-pods"><a href="#上传cocoa-pods" class="headerlink" title="上传cocoa pods"></a>上传cocoa pods</h2><p>1.cd 到你的git本地目录</p>
+<h2 id="三-上传cocoa-pods"><a href="#三-上传cocoa-pods" class="headerlink" title="三.上传cocoa pods"></a>三.上传cocoa pods</h2><p>1.cd 到你的git本地目录</p>
 <p>2.在工程根目录初始化一个Podspec文件 最好与你项目同名</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod spec create EMTest</div></pre></td></tr></table></figure>
 <p><img src="/img/2018:02:09_110302.jpg" width="500"></p>
@@ -56,7 +56,7 @@
 <p>在执行pod search就会重新搜索<br><img src="/img/2018:02:09_141205.jpg" width="500"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="1-上传framework到Github"><a href="#1-上传framework到Github" class="headerlink" title="1.上传framework到Github"></a>1.上传framework到Github</h2><]]>
+    <![CDATA[<h2 id="一-上传framework到Github"><a href="#一-上传framework到Github" class="headerlink" title="一.上传framework到Github"></a>一.上传framework到Github</h2><]]>
     </summary>
     
   </entry>
